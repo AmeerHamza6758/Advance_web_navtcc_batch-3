@@ -1,0 +1,27 @@
+/* universal selector */
+
+/* *{
+ background-color: yellow;   
+} */
+
+/* id selector */
+#title{
+/* property: value */
+background-color: red;
+}
+
+/* Class selector */
+
+.para{
+    background-color: blue;
+}
+
+/* Element selector */
+h2{
+    color: blue;
+}
+
+
+/* Height width border paddding margin */
+
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head section -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaadi clone</title>
+
+    <!-- Enternal CSS -->
+<link rel="stylesheet" href="../CSS/style.css" type="text/css">
+
+<!-- Internal CSS -->
+    <style>
+/* Write CSS here */
+    </style>
+
+</head>
+
+
+
+<!-- Body section -->
+
+<body>
+    <p style="color: red; ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis quisquam exercitationem cupiditate qui
+        optio ea dolores, error vel voluptates veritatis quam reprehenderit, reiciendis porro at id? Iure, sit nesciunt.
+    </p>
+
+    <!-- h1-h6 -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <br>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!--  -->
+    <hr>
+    <br>
+
+    <!-- Formatting Tags -->
+    <b>Bold text</b>
+    <u>Underlined text</u>
+    <del>Deleted text</del>
+    <code>Code Text</code>
+    <mark>Marking text</mark>
+    <strong>Strong Text</strong>
+    <small>Small Text</small>
+
+    <!-- List in HTML -->
+
+    <h1>Lists in HTML</h1>
+    <br>
+    <h2><u>Ordered List</u></h2>
+    <ol type="1" id="title">
+        <li>Ameer</li>
+        <li>Danial</li>
+        <li>Sana</li>
+        <li>Ali</li>
+        <li>Usama</li>
+    </ol>
+    <!-- UnOrdered List -->
+    <h2><u>Unordered List</u></h2>
+    <ul type="square" class="para">
+        <li>Ameer</li>
+        <li>Danial</li>
+        <li>Sana</li>
+        <li>Ali</li>
+        <li>Usama</li>
+    </ul>
+
+    <h2><u>Description List</u></h2>
+    <dl class="para">
+        <dt>Ali</dt>
+        <dd>Ali is a student in the class.</dd>
+        <dt>Hamza</dt>
+        <dd>Ali is a student in the class.</dd>
+        <dt>Fahad</dt>
+        <dd>Ali is a student in the class.</dd>
+    </dl>
+    <hr>
+    <hr>
+    <!--  -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <mark><b> Debitis quia magnam corporis dolor
+            </b></mark> deleniti sit
+        rerum, iste repellat aut amet nostrum neque sed mollitia eveniet vel provident, ex magni quod.</p>
+    <br><br>
+    <hr>
+
+
+    <!-- Media Elements -->
+
+    <img src="../assets/images/natureImage.jpeg" alt="Nature Image" width="500px" height="300px">
+
+    <!-- video tags -->
+    <video src="../assets/video/myVideo.mp4" controls autoplay muted loop></video>
+
+    <video controls autoplay muted loop>
+        <!-- <source src="../assets/video/myVideo.mp4" type="video/mp4"> -->
+        <source src="../assets/video/myVideo.mp4" type="video/mp4">
+        <source src="../assets/video/myVideo.mp4" type="video/mp4">
+        <source src="../assets/video/myVideo.mp4" type="video/mp4">
+    </video>
+
+    <!-- audio -->
+    <audio src="../assets/audio/song.mp3" controls></audio>
+
+    <br><br>
+    <hr> <br> <br>
+    <!-- Table -->
+    <h2>Students Record Table</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <!-- body -->
+        <tbody>
+            <tr>
+                <td>Fahad</td>
+                <td>24</td>
+                <td>Lahore</td>
+            </tr>
+            <tr>
+                <td>Ali Fahad</td>
+                <td>34</td>
+                <td>Lahore</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- FORM -->
+    <hr>
+    <hr>
+    <form action="" style="background-color: rgba(255, 38, 0, 0.641);  width:500px;">
+        <h3>Student FORM</h3>
+        <label for="fname">Enter your Name:</label>
+        <input type="text" name="fname" id="fname" value="" placeholder="Enter your name" required>
+        <br> <br>
+        <label for="email">Enter your Email:</label>
+        <input type="email" placeholder="ameer@yopmail.com">
+        <br><br>
+        <label for="password">Enter your Password:</label>
+        <input type="password" placeholder="Enter your password">
+        <br><br>
+        <label for="age">Enter your Age:</label>
+        <input type="number" placeholder="Enter your age">
+        <br><br>
+        <label for="dob">Select DOB</label>
+        <input type="time" placeholder="Select DOB">
+        <br><br>
+        <label for="color">Select Color:</label>
+        <input type="color" id="color">
+        <br><br>
+
+        <label for="range">Select Range of your skills set:</label>
+        <input type="range" min="0" max="10">
+        <br><br>
+
+        <textarea name="" id="" placeholder="Enter your details" rows="5" cols="50"></textarea>
+        <br><br>
+        <label for="idCard">Upload your ID Card:</label>
+        <input type="file" id="idCard">
+        <br><br>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+    <hr>
+
+    <!-- hyperlink -->
+
+    <!-- External linking -->
+    <a href="https://www.daraz.pk/" target="_blank">Click here to visit Daraz</a>
+
+    <!-- Internal Linking -->
+    <a href="xyz.html" target="_parent">Click here to visit xyz.html</a>
+
+    <a href="tel:+9298393">Send Mail</a>
+    <br> <br> <br>
+
+    <!-- IFrame -->
+
+    <iframe src="https://www.programiz.com/javascript/online-compiler" frameborder="2" width="500"
+        height="500"></iframe>
+
+    <!-- div -->
+
+    <div style="background-color: blue">
+        <h2 >Ameer Hamza</h2>
+        <h3 >Hello World</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="color: red;"> Quibusdam at facere animi, quis dolor, fugiat hic </span>
+            cum magnam deserunt ipsa voluptate, numquam amet eos ducimus odio incidunt atque reprehenderit esse?</p>
+    </div>
+
+
+    <!-- Semantic Tags in HTML -->
+<footer>
+    <ul>
+        <h2>Company</h2>
+        <li>Contact US</li>
+        <li>About US</li>
+        <li>TERMS</li>
+    </ul>
+</footer>
+
+</body>
+
+
+</html>
+
+
+
+<!-- Tags syntax -->
+
+<!-- input Types -->
+<!-- Text, Email, Password, number, date, time, color, file, checkbox, radio, submit, reset, button, hidden, image, month,
+range, search, tel, url, week -->
+
+
+
+
+
+<!-- 1-Inline 2-Internal 3-External-->
+
+<!-- Selectors:> 1-uni 2-id 3-class 4-selector -->
