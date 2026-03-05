@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    overflow: hidden;
+}
+
+.container {
+    border: 2px solid red;
+    padding: 20px;
+    /* margin: 30px; */
+    background-color: yellow;
+    /* Height */
+    height: 400px;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.typography{
+color: #008000;
+font-size: 40px;
+font-weight:900;
+/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+font-style: italic;
+
+/* Text */
+text-transform: capitalize;
+text-decoration: line-through;
+text-align: center;
+/* letter-spacing: 10px; */
+/* word-spacing: 30px; */
+/* white-space: nowrap; */
+text-shadow: 7px 7px 6px red ;
+}
