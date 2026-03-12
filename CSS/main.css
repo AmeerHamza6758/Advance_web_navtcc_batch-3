@@ -8,7 +8,7 @@
     border: 2px solid red;
     padding: 20px;
     /* margin: 30px; */
-    background-color: yellow;
+    /* background-color: yellow; */
     /* Height */
     height: 400px;
     width: 300px;
@@ -39,7 +39,7 @@ align-items: start;
 /* justify-content: space-between; */
 gap: 20px;
 height: 200px;
-background-color: yellow;
+/* background-color: yellow; */
 
 }
 
@@ -80,10 +80,26 @@ background-color: yellow;
     right: 0px;
 }
 
-.p-fix{
+/* .p-fix{
     width: 100%;
     height: 100px;
-    background-color: blue;
+    background-color: greenyellow;
     position: fixed;
-    top: 0;
+    top: 30px;
+} */
+
+.sticky-box{
+    background-color: plum;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+}
+
+.grid-box{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 50px;
 }
