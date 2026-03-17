@@ -104,6 +104,11 @@ height: 200px;
     row-gap: 50px;
 }
 
+.name-title{
+    font-size: 35px;
+    color: red;
+}
+
 
 /* Media query */
 
@@ -125,6 +130,11 @@ height: 200px;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 10px;
 }
+
+.name-title{
+    font-size: 20px;
+    color: black;
+}
 }
 
 /* Tablets screens */
@@ -133,6 +143,11 @@ height: 200px;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 10px;
 }
+
+.name-title{
+    font-size: 25px;
+    color: orange;
+}
 }
 
 /* Laptops */
@@ -140,6 +155,10 @@ height: 200px;
 .grid-box{
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px;
+}
+.name-title{
+    font-size: 30px;
+    color: blue;
 }
 }
 
