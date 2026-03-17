@@ -103,3 +103,47 @@ height: 200px;
     column-gap: 30px;
     row-gap: 50px;
 }
+
+
+/* Media query */
+
+/* @media media-type (media-feature){ */
+/*Styles go here*/
+/* } */
+
+
+@media (min-width:600px) and (max-width:800px) {
+    body{
+        /* background-color: red; */
+    }
+}
+
+
+/* Mobile screens */
+@media (min-width:320px) and (max-width:480px){
+.grid-box{
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+}
+}
+
+/* Tablets screens */
+@media (min-width:481px) and (max-width:768px){
+.grid-box{
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+}
+}
+
+/* Laptops */
+@media (min-width:769px) and (max-width:1024px){
+.grid-box{
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+}
+}
+
+/* Desktops */
+@media (min-width:1025px) and (max-width:1200px){
+
+}
