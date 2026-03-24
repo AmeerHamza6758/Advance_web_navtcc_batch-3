@@ -2,6 +2,8 @@
     margin: 0px;
     /* overflow: hidden; */
     position: relative;
+    overflow: hidden;
+
 }
 
 .container {
@@ -16,51 +18,52 @@
     border-radius: 20px;
 }
 
-.typography{
-color: #008000;
-font-size: 40px;
-font-weight:900;
-/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-font-style: italic;
+.typography {
+    color: #008000;
+    font-size: 40px;
+    font-weight: 900;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-style: italic;
 
-/* Text */
-text-transform: capitalize;
-text-decoration: line-through;
-text-align: center;
-/* letter-spacing: 10px; */
-/* word-spacing: 30px; */
-/* white-space: nowrap; */
-text-shadow: 7px 7px 6px red ;
+    /* Text */
+    text-transform: capitalize;
+    text-decoration: line-through;
+    text-align: center;
+    /* letter-spacing: 10px; */
+    /* word-spacing: 30px; */
+    /* white-space: nowrap; */
+    text-shadow: 7px 7px 6px red;
 }
 
-.parent{
-display: flex;
-align-items: start;
-/* justify-content: space-between; */
-gap: 20px;
-height: 200px;
-/* background-color: yellow; */
+.parent {
+    display: flex;
+    align-items: start;
+    /* justify-content: space-between; */
+    gap: 20px;
+    height: 200px;
+    /* background-color: yellow; */
 
 }
 
-.box-1{
+.box-1 {
     background-color: red;
-     width: 100px;
+    width: 100px;
     height: 100px;
 }
-.box-2{
+
+.box-2 {
     background-color: blue;
-     width: 100px;
+    width: 100px;
     height: 100px;
 }
 
-.box-3{
+.box-3 {
     background-color: pink;
-     width: 100px;
+    width: 100px;
     height: 100px;
 }
 
-.box-p{
+.box-p {
     width: 500px;
     height: 400px;
     background-color: gray;
@@ -71,7 +74,7 @@ height: 200px;
     overflow: hidden;
 }
 
-.abs-box{
+.abs-box {
     background-color: red;
     width: 100px;
     height: 100px;
@@ -88,7 +91,7 @@ height: 200px;
     top: 30px;
 } */
 
-.sticky-box{
+.sticky-box {
     background-color: plum;
     height: 100px;
     position: sticky;
@@ -96,7 +99,7 @@ height: 200px;
     z-index: 9999;
 }
 
-.grid-box{
+.grid-box {
     margin: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -104,9 +107,19 @@ height: 200px;
     row-gap: 50px;
 }
 
-.name-title{
-    font-size: 35px;
-    color: red;
+
+/* animation: name duration timing-function delay iteration-count direction fill-mode play-state; */
+.name-title {
+    /* animation-name: colorChanger;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    display: block;
+    text-wrap: nowrap;
+    /* background-color: red; */
+    font-weight: 900;
+    animation: colorChanger 5s ease-in-out infinite alternate;
 }
 
 
@@ -118,51 +131,85 @@ height: 200px;
 
 
 @media (min-width:600px) and (max-width:800px) {
-    body{
+    body {
         /* background-color: red; */
     }
 }
 
 
 /* Mobile screens */
-@media (min-width:320px) and (max-width:480px){
-.grid-box{
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 10px;
-}
+@media (min-width:320px) and (max-width:480px) {
+    .grid-box {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+    }
 
-.name-title{
-    font-size: 20px;
-    color: black;
-}
+    .name-title {
+        font-size: 20px;
+        color: black;
+    }
 }
 
 /* Tablets screens */
-@media (min-width:481px) and (max-width:768px){
-.grid-box{
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 10px;
-}
+@media (min-width:481px) and (max-width:768px) {
+    .grid-box {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+    }
 
-.name-title{
-    font-size: 25px;
-    color: orange;
-}
+    .name-title {
+        font-size: 25px;
+        color: orange;
+    }
 }
 
 /* Laptops */
-@media (min-width:769px) and (max-width:1024px){
-.grid-box{
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 10px;
-}
-.name-title{
-    font-size: 30px;
-    color: blue;
-}
+@media (min-width:769px) and (max-width:1024px) {
+    .grid-box {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 10px;
+    }
+
+    .name-title {
+        font-size: 30px;
+        color: blue;
+    }
 }
 
 /* Desktops */
-@media (min-width:1025px) and (max-width:1200px){
+@media (min-width:1025px) and (max-width:1200px) {}
+
+
+
+
+/* Animations */
+
+
+@keyframes colorChanger {
+    /* from {
+        color: red;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    to {
+        color: black;
+        font-size: 30px;
+        font-weight: 900;
+    } */
+
+    0% {
+        /* text-align: start; */
+        /* width: 0%; */
+        transform: translate(0%);
+        color: red;
+    }
+
+    100% {
+        /* text-align: end; */
+        /* width: 100%; */
+        transform: translate(80%);
+        color: black;
+    }
 
 }
