@@ -128,3 +128,62 @@ console.log(compResult)
 if (comp1 > 15 || comp2 == "10") {
     console.log('Both conditions are true')
 }
+
+
+
+
+
+//////////////// Conditional Statements (if, else if, else, switch)
+
+// if(condition){
+//     // True
+// // body statement
+// }
+
+let age = 18;
+
+// if (age > 19) {
+//     // body statement
+//     console.log("You are Adult!!!!")
+// }
+
+
+// if else statement
+
+
+if (age > 19) {
+    // body statement
+    console.log("You are Adult!!!!")
+}
+else {
+    console.log("You are not Adult!!!!")
+}
+
+
+// if else if statement
+
+// if (){
+
+// } else if (){
+
+// }
+
+// else {
+
+// }
+
+
+
+let day = "Monday"
+day === "Monday"
+
+switch (day) {
+    case "Monday":
+        console.log("First day of the week")
+        break;
+    case "Friday":
+        console.log("First day of the week")
+        break;
+    default:
+        console.log("Not a valid day")
+}
