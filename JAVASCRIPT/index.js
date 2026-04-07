@@ -172,8 +172,6 @@ else {
 
 // }
 
-
-
 let day = "Monday"
 day === "Monday"
 
@@ -187,3 +185,67 @@ switch (day) {
     default:
         console.log("Not a valid day")
 }
+
+
+// Loops (for, while, do while)
+
+// console.log('Num1', 1)
+// console.log('Num2', 2)
+// console.log('Num3', 3)
+// console.log('Num4', 4)
+// console.log('Num5', 5)
+
+// for("initialization, condition, and afterthought"){
+
+// }
+
+for (let start = 1; start <= 150; start++) {
+    // console.log('Hello Meer Hamza', start)
+}
+
+
+let startNum = 1
+
+// const endNum = prompt("Enter a number")
+
+// while (startNum <= endNum) {
+//     console.log('While Loop', startNum)
+//     startNum++
+// }
+
+
+
+do {
+    console.log('Do While Loop', startNum)
+    startNum++
+} while (startNum <= 10)
+
+
+
+// for in
+
+
+const person = {
+    name: "Ameer Hamza",
+    age: 22,
+    adress: 'RYK'
+}
+
+// for(let xyz in person){
+
+// }
+
+// for(let xyz in person){
+// console.log('Key is: ', xyz, 'Value is: ', person[xyz])
+// }
+
+
+// for(let xyz of person){
+
+// }
+const array=[1,2,3,4,5]
+
+for(let index of array){
+console.log(index+10)
+}
+
