@@ -1,5 +1,7 @@
 console.log('Hello I\m here')
 
+
+
 // Variables
 var name = "Ameer Hamza"
 
@@ -249,3 +251,27 @@ for(let index of array){
 console.log(index+10)
 }
 
+// Functions in JS
+
+
+// function xyz ("parameter"){
+//     return
+// }
+
+
+// xyz("arguments")
+
+
+function printName(name='Ameer'){
+    // let date = new Date()
+    // let age = date.getFullYear() -dob
+    console.log(`Hello my name is ${name}`)
+}
+
+
+
+
+// printName(2000)
+printName()
+printName('Anum')
+printName('Arslan')
