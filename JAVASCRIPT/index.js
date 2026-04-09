@@ -268,10 +268,16 @@ function printName(name='Ameer'){
     console.log(`Hello my name is ${name}`)
 }
 
-
-
-
 // printName(2000)
 printName()
 printName('Anum')
 printName('Arslan')
+
+//DOM
+
+    const nameOfTeacher = document.getElementById('name')
+
+    nameOfTeacher.style.color ='red'
+    nameOfTeacher.style.fontSize='44px'
+
+    nameOfTeacher.textContent="Arslan"
