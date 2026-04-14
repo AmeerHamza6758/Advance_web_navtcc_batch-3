@@ -245,10 +245,10 @@ const person = {
 // for(let xyz of person){
 
 // }
-const array=[1,2,3,4,5]
+const array = [1, 2, 3, 4, 5]
 
-for(let index of array){
-console.log(index+10)
+for (let index of array) {
+    console.log(index + 10)
 }
 
 // Functions in JS
@@ -262,7 +262,7 @@ console.log(index+10)
 // xyz("arguments")
 
 
-function printName(name='Ameer'){
+function printName(name = 'Ameer') {
     // let date = new Date()
     // let age = date.getFullYear() -dob
     console.log(`Hello my name is ${name}`)
@@ -275,9 +275,83 @@ printName('Arslan')
 
 //DOM
 
-    const nameOfTeacher = document.getElementById('name')
+const nameOfTeacher = document.getElementById('name')
 
-    nameOfTeacher.style.color ='red'
-    nameOfTeacher.style.fontSize='44px'
+nameOfTeacher.style.color = 'red'
+nameOfTeacher.style.fontSize = '44px'
 
-    nameOfTeacher.textContent="Arslan"
+nameOfTeacher.textContent = "Arslan"
+
+
+
+nameOfTeacher.addEventListener('mouseover', () => {
+    nameOfTeacher.style.color = 'blue'
+})
+
+
+function changeColor() {
+    nameOfTeacher.style.color = 'blue'
+}
+
+
+const poc = 'Hello'
+
+console.log(`${poc} Ameer Hamza`)
+
+
+
+// Destrcutreing
+
+
+
+// SetTimeout and SetInterval
+setTimeout(() => {
+    console.log('Hello Set time out called')
+}, 5000)
+
+// Callbacks
+
+function first(xyz) {
+    xyz()
+
+    console.log('First Called')
+}
+
+function second() {
+    console.log('Second Called')
+}
+
+first(second)
+
+
+// promises
+
+
+const myPromise = new Promise((resolve, reject) => {
+    const success = true;
+    if (success) {
+        resolve("Operation was successful!");
+    } else {
+        reject(new Error("Something went wrong."));
+    }
+})
+
+
+myPromise.then((output) => { console.log(output, 'Then resolved') }).then(() => { })
+    .catch((err) => { console.log(err, 'here is error') })
+    .finally(() => { console.log('I\m Finally') })
+
+
+async function fetchData() {
+    const results = await fetch('https://jsonplaceholder.typicode.com/todos')
+        .then(response => response.json())
+        .then(json => console.log(json))
+        .catch(err => console.log(err))
+
+    console.log("Hello I'm called")
+}
+
+fetchData()
+
+console.log('Hello World')
+
