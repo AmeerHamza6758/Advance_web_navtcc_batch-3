@@ -1,16 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
+import Navbar from './components/navbar/Navbar'
+import Sales from './pages/Sales'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const myName = "Ameer"
+  console.log('Hello', myName)
+
+  const name = 'Ameer Hamza'
+  const contact = "03000000000"
 
   return (
-    <>
-     <h1>Hello Ameer Hamza</h1>
-    </>
+    <div>
+      <Navbar name={name} phone={contact}/>
+      <h1 className='xyz'>Hello {myName}</h1>
+      <Navbar name="Arslan" phone="0909999999"/>
+
+
+      <Sales/>
+    </div>
   )
 }
 
