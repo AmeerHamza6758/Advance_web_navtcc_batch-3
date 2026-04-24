@@ -1,0 +1,24 @@
+.pre-footer{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pre-footer > .title{
+    text-transform: uppercase;
+    color: white;
+}
+.pre-footer> .subtitle{
+     text-transform: uppercase;
+    color: white;
+}
+
+.pre-footer-continer{
+      background-color: black;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}

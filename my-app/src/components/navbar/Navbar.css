@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+}
+
+.nav-container {
+    background-color: rgb(241, 241, 238);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.nav-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: brown;
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.regi-btn{
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    background-color: brown;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5 ease-in-out;
+}
+
+.regi-btn:hover{
+    background-color: rgb(45, 45, 45);
+}
+
+
+.log-btn{
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5 ease-in-out;
+}
+
+.log-btn:hover{
+    background-color: brown;
+}

@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
 import Sales from './pages/Sales'
 
@@ -12,11 +13,10 @@ function App() {
   return (
     <div>
       <Navbar name={name} phone={contact}/>
-      <h1 className='xyz'>Hello {myName}</h1>
-      <Navbar name="Arslan" phone="0909999999"/>
-
-
-      <Sales/>
+      {/* <h1 className='xyz'>Hello {myName}</h1>
+      <Navbar name="Arslan" phone="0909999999"/> */}
+      <Sales/>  
+      <Footer/>
     </div>
   )
 }
