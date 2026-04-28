@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
@@ -22,8 +22,6 @@ function App() {
     }
     console.log(teacherName)
   }
-
-
   // Count
 
   function counting() {
@@ -32,11 +30,27 @@ function App() {
   // Baki kaam
 
   const myName = "Ameer"
-  console.log('Hello', myName)
 
   const name = 'Ameer Hamza'
   const contact = "03000000000"
 
+
+  // Use Effect
+  console.log('Hello1', myName)
+
+  useEffect(() => {
+    console.log('Use Effect called')
+
+
+    // return(
+    //   ()=>{
+
+    //   }
+    // )
+  },[count])
+  console.log('Hello2', myName)
+
+  // 
   return (
     <div>
       <Navbar name={name} phone={contact} />
