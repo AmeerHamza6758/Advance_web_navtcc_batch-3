@@ -3,6 +3,7 @@ import './App.css'
 import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
 import Sales from './pages/Sales'
+import StudentForm from './components/StudentForm'
 
 function App() {
   // Define Hooks
@@ -58,12 +59,14 @@ function App() {
       <Navbar name="Arslan" phone="0909999999"/> */}
       {/* <Sales/>   */}
 
-      <h1>{teacherName}</h1>
+      {/* <h1>{teacherName}</h1>
 
       <button onClick={tNameChange}>Click me</button>
 
       <h2>Count: {count}</h2>
-      <button onClick={counting}>Count++</button>
+      <button onClick={counting}>Count++</button> */}
+
+      <StudentForm/>
       <Footer />
     </div>
   )

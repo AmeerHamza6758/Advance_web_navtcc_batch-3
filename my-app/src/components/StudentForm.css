@@ -1,0 +1,76 @@
+.std-form-title {
+    font-size: 30px;
+    color: chocolate;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.container {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    background-color: rgba(255, 228, 196, 0.748);
+    padding: 40px 20px;
+}
+
+.form-container {
+    /* height: ; */
+    background-color: rgba(127, 255, 212, 0.76);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 30px;
+    padding: 40px 60px;
+    width: fit-content;
+}
+
+.label {
+    font-size: 25px;
+    font-weight: 700;
+    color: chocolate;
+}
+
+.input {
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.input:focus {
+    outline: 1px solid chocolate;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-clear {
+    border: 2px solid brown;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: brown;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: brown;
+    color: white;
+    border: none;
+
+}
