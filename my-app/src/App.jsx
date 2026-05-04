@@ -4,6 +4,10 @@ import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
 import Sales from './pages/Sales'
 import StudentForm from './components/StudentForm'
+import CRender from './components/conditional-rendering/CRender'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
 
 function App() {
   // Define Hooks
@@ -41,35 +45,40 @@ function App() {
 
   useEffect(() => {
     console.log('Use Effect called')
-
-
-    // return(
-    //   ()=>{
-
-    //   }
-    // )
-  },[count])
+  }, [count])
   console.log('Hello2', myName)
 
   // 
   return (
     <div>
-      <Navbar name={name} phone={contact} />
-      {/* <h1 className='xyz'>Hello {myName}</h1>
-      <Navbar name="Arslan" phone="0909999999"/> */}
-      {/* <Sales/>   */}
 
-      {/* <h1>{teacherName}</h1>
+      {/* <Navbar name={name} phone={contact} />
+      <CRender/>
+      <StudentForm/>  
+      <Footer /> */}
 
-      <button onClick={tNameChange}>Click me</button>
-
-      <h2>Count: {count}</h2>
-      <button onClick={counting}>Count++</button> */}
-
-      <StudentForm/>
+      <Navbar />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path='/sales' element={<Sales />} />
+        <Route path='/contact-us' element={<Contact />} />
+      </Routes>
       <Footer />
     </div>
   )
 }
 
 export default App
+
+
+
+
+{/* <h1 className='xyz'>Hello {myName}</h1>
+      <Navbar name="Arslan" phone="0909999999"/> */}
+{/* <Sales/>   */ }
+{/* <h1>{teacherName}</h1>
+      <button onClick={tNameChange}>Click me</button>
+      <h2>Count: {count}</h2>
+      <button onClick={counting}>Count++</button> */}
+
+{/* <StudentForm/> */ }

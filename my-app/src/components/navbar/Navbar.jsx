@@ -1,20 +1,23 @@
 import React from 'react'
 import './Navbar.css'
 import NavLogo from '../../../public/download.jpeg'
+import { Link, useNavigate } from 'react-router-dom'
 function Navbar(props) {
   const { name, phone } = props
 
+  const navigate = useNavigate()
+
   const navItems = [{
     label: "Home",
-    path: "#"
+    path: "/"
   },
   {
     label: "Sales",
-    path: "#"
+    path: "/sales"
   },
   {
     label: "Contact",
-    path: "#"
+    path: "contact-us"
   },
   {
     label: "About",
@@ -42,13 +45,13 @@ function Navbar(props) {
       <div className='nav-items'>
         {navItems.map((item, index) => (
           <>
-            <a href={item.path}>{item.label}</a>
+            <Link to={item.path}>{item.label}</Link>
           </>
         ))}
       </div>
 
       <div className='btn-container'>
-        <button className='regi-btn'>Register</button>
+        <button className='regi-btn' onClick={()=> navigate('/sales')}>Register</button>
         <button className='log-btn'>Login</button>
       </div>
     </div>
