@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useContext } from 'react'
 import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/footer/Footer'
 import Card from '../components/Card'
 import './Sales.css'
+import { MyContext } from '../context/MyContext'
 function Sales() {
 
     const salesCardsData = [
@@ -64,14 +65,19 @@ function Sales() {
         imageUrl: "https://pk.khaadi.com/dw/image/v2/BJTG_PRD/on/demandware.static/-/Sites-khaadi-master-catalog/default/dw55f8853c/images/hi-res/1-26-213-a-j1_multi_2.jpg?sw=400&sh=600", // 🔁 Replace with actual URL
     }
 ];
+  const {name}=useContext(MyContext)
 
     return (
+        <>
+        <h2>Hi this is sales page: {name}</h2>
         <div className='sales-container'>
             {
                 salesCardsData.map((item, index) => (
                     <Card data={item}/>
                 ))
             }        </div>
+        </>
+
     )
 }
 

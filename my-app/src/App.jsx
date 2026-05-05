@@ -36,7 +36,7 @@ function App() {
 
   const myName = "Ameer"
 
-  const name = 'Ameer Hamza'
+  const name = 'Ameer Hamza'  
   const contact = "03000000000"
 
 
